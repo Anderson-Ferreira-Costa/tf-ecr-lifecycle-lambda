@@ -1,0 +1,49 @@
+{
+  "rules": [
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "imageCountMoreThan",
+        "countNumber": 100,
+        "tagStatus": "tagged",
+        "tagPatternList": [
+          "dev*"
+        ]
+      },
+      "description": "lifecycle de dev",
+      "rulePriority": 1
+    },
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "imageCountMoreThan",
+        "countNumber": 100,
+        "tagStatus": "tagged",
+        "tagPatternList": [
+          "tst*"
+        ]
+      },
+      "description": "lifecycle de tst",
+      "rulePriority": 2
+    },
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "imageCountMoreThan",
+        "countNumber": 50,
+        "tagStatus": "tagged",
+        "tagPatternList": [
+          "hml*"
+        ]
+      },
+      "description": "lifecycle de hml",
+      "rulePriority": 3
+    }
+  ]
+}

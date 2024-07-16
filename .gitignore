@@ -1,0 +1,4 @@
+*.hcl
+*.zip
+*.terraform
+*.backup
